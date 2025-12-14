@@ -1408,6 +1408,109 @@ a:hover {
     color: var(--olive);
 }
 
+/* Contact Page */
+.contact-page {
+    padding: var(--section-padding) 0;
+    background: var(--bg-primary);
+}
+
+.contact-page-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-300);
+}
+
+.contact-card.primary-card {
+    background: linear-gradient(135deg, var(--burgundy) 0%, var(--navy) 100%);
+    color: var(--white);
+    border: none;
+}
+
+.contact-card.primary-card h2,
+.contact-card.primary-card p {
+    color: var(--white);
+}
+
+.contact-card.primary-card .contact-main a {
+    color: var(--white);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h2 {
+    font-size: 1.25rem;
+    color: var(--burgundy);
+    margin-bottom: 0.75rem;
+}
+
+.contact-main {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.contact-main a {
+    color: var(--olive);
+}
+
+.contact-card .btn-small {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-300);
+}
+
+.sidebar-card h2 {
+    font-size: 1.1rem;
+    color: var(--burgundy);
+    margin-bottom: 1rem;
+}
+
+.sidebar-card a {
+    color: var(--olive);
+    font-weight: 500;
+}
+
+.contact-map {
+    margin-top: 2rem;
+}
+
+.contact-map h2 {
+    text-align: center;
+    color: var(--burgundy);
+    margin-bottom: 1.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .location-grid {
@@ -1417,6 +1520,10 @@ a:hover {
     .links-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .contact-page-grid {
+        grid-template-columns: 1fr;
     }
     .cat-friendly-grid,
     .contact-grid {
