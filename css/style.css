@@ -995,21 +995,23 @@ a:hover {
 }
 
 /* Page Header (for sub-pages) */
+/* Page Header - used on service pages, location, contact, etc. */
 .page-header {
-    padding: 7rem 1.5rem 3rem;
-    background: linear-gradient(135deg, var(--bg-warm) 0%, var(--bg-secondary) 100%);
+    padding: 5.5rem 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--burgundy) 0%, #4a2c2c 100%);
     border-bottom: 1px solid var(--gray-300);
     text-align: center;
 }
 
 .page-header h1 {
-    color: var(--burgundy);
+    color: var(--white);
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .page-header p {
-    color: var(--gray-500);
-    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
 }
 
 /* Service Detail Page */
@@ -1323,24 +1325,6 @@ a:hover {
 }
 
 /* Location Page */
-.page-header {
-    background: linear-gradient(135deg, var(--burgundy) 0%, var(--navy) 100%);
-    color: var(--white);
-    padding: 8rem 0 4rem;
-    text-align: center;
-}
-
-.page-header h1 {
-    color: var(--white);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.page-header p {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 1.1rem;
-}
-
 .location-detail {
     padding: var(--section-padding) 0;
     background: var(--bg-primary);
