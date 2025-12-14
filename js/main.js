@@ -8,9 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.querySelector('.nav-menu');
 
     if (navToggle) {
+        // Set initial aria-expanded state
+        navToggle.setAttribute('aria-expanded', 'false');
+        
         navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
+            const isExpanded = navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
         });
 
         // Close menu when clicking on a link
@@ -18,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -38,20 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     });
 
-    // Smooth scroll for anchor links
+    // Smooth scroll for anchor links (skip bare "#" links like logo)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        const href = anchor.getAttribute('href');
+        // Skip if href is just "#" (e.g., logo link)
+        if (href === '#') return;
+        
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const headerOffset = 80;
-                const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            try {
+                const target = document.querySelector(href);
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            } catch (err) {
+                // Invalid selector, ignore
             }
         });
     });

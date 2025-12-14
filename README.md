@@ -18,7 +18,7 @@ A modern, responsive website for Sunnymead Animal Hospital - an AAHA accredited 
 - Cat-friendly amenities
 - Meet the team
 - Payment options (ScratchPay integration info)
-- Contact form
+- Contact information
 - Helpful resources
 
 ## 🚀 Deployment

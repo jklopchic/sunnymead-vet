@@ -5,10 +5,10 @@
 
 /* CSS Variables */
 :root {
-    /* Primary Colors - Matched to logo */
-    --primary: #8B7B2B;          /* Olive gold from logo border */
-    --primary-dark: #6B5F1F;
-    --primary-light: #A99A4A;
+    /* Primary Colors - Matched to logo (darkened for WCAG contrast) */
+    --primary: #5C5118;          /* Darkened olive for 4.5:1 contrast on white */
+    --primary-dark: #4A4114;
+    --primary-light: #7A6B22;
     --accent: #8B1A1A;           /* Deep burgundy from logo */
     --accent-light: #D4A574;     /* Warm gold */
     
@@ -16,6 +16,7 @@
     --burgundy: #722F37;         /* Maroon background in logo */
     --gold: #C9B037;             /* Yellow/gold sunburst */
     --olive: #8B7B2B;            /* Olive green border */
+    --navy: #2C3E50;             /* Dark blue for gradients */
     
     /* Warm Neutrals */
     --dark: #2D2A26;             /* Warm black */
