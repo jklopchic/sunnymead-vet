@@ -2,6 +2,16 @@
 
 A modern, responsive website for Sunnymead Animal Hospital - an AAHA accredited veterinary practice in Moreno Valley, CA.
 
+## 📖 New Owner? Start Here!
+
+**[Read the full instructions →](INSTRUCTIONS.md)**
+
+The INSTRUCTIONS.md file has everything you need to:
+- Get your website online with GitHub Pages
+- Connect your own domain name
+- Make updates and changes
+- Troubleshoot common problems
+
 ## 🐾 Features
 
 - **Modern Design**: Clean, professional aesthetic with smooth animations
@@ -10,55 +20,69 @@ A modern, responsive website for Sunnymead Animal Hospital - an AAHA accredited 
 - **SEO Optimized**: Semantic HTML with proper meta tags
 - **Accessible**: Following web accessibility best practices
 
-## 🏥 Sections
+## 🏥 Sections & Pages
 
+### Homepage (index.html)
 - Hero with call-to-action
 - AAHA Accreditation banner
 - Services grid (14 veterinary services)
 - Cat-friendly amenities
 - Meet the team
 - Payment options (ScratchPay integration info)
+- Moreno Valley Spotlight
 - Contact information
 - Helpful resources
 
-## 🚀 Deployment
-
-This site is deployed via GitHub Pages at: `https://[username].github.io/sunnymead-vet/`
+### Additional Pages
+- **location.html** - Dedicated location page with map and hours
+- **contact.html** - Contact information and details
+- **cats.html** - Cat-friendly amenities and features
+- **employment.html** - Job listings and career opportunities
+- **services/** - 14 individual service detail pages
 
 ## 📁 Project Structure
 
 ```
 sunnymead-vet/
-├── index.html          # Main HTML file
+├── index.html          # Homepage
+├── location.html       # Location page
+├── contact.html        # Contact page
+├── cats.html           # Cat-friendly amenities page
+├── employment.html     # Employment opportunities
+├── services/           # Individual service pages (14 total)
+│   ├── wellness.html
+│   ├── vaccinations.html
+│   └── ...
 ├── css/
 │   └── style.css       # All styles
 ├── js/
 │   └── main.js         # JavaScript functionality
 ├── images/             # Image assets
+├── CNAME               # Custom domain configuration
+├── INSTRUCTIONS.md     # Detailed owner's guide
 └── README.md           # This file
 ```
 
 ## 🛠️ Local Development
 
-Simply open `index.html` in a web browser, or use a local server:
+To test changes before publishing, you can run a local server:
 
 ```bash
 # Using Python
 python -m http.server 8000
 
-# Using Node.js
-npx serve
+# Then open http://localhost:8000 in your browser
 ```
+
+Or simply open `index.html` directly in your web browser.
 
 ## 📞 Contact
 
 **Sunnymead Animal Hospital**
 - Phone: (951) 242-3118
+- Address: 24537 Sunnymead Boulevard, Moreno Valley, CA 92553
 - Hours: Mon-Fri 8am-6pm
-- Location: Moreno Valley, CA
 
 ---
 
 © 2024 Sunnymead Animal Hospital. All rights reserved.
-
-
