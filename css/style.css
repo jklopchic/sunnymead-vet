@@ -250,6 +250,9 @@ a:hover {
     color: var(--white) !important;
     padding: 0.6rem 1.25rem;
     border-radius: var(--radius-md);
+    white-space: nowrap;
+    min-width: 140px;
+    text-align: center;
 }
 
 .nav-btn:hover {
