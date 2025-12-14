@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Sunnymead Animal Hospital - Classic Edition</title>
+	<style type="text/css">
+		/* ======================================
+		   🐾 CLASSIC SUNNYMEAD STYLE 🐾
+		   An homage to the original website
+		   ====================================== */
+		
+		html, body, h1, h2, h3, h4 {
+			margin: 0;
+			padding: 0;
+		}
+		h1 img {
+			display: block;
+		}
+		img {
+			border: 0;
+		}
+		a {
+			color: #CFB472;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #241D0A;
+		}
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+		.more {
+			text-align: right;
+		}
+		.clear {
+			clear: both;
+		}
+
+		body {
+			background: #C89C52 url(https://sunnymeadanimal.com/images/page_bg.jpg) repeat-x;
+			text-align: center;
+			font: 11px arial, sans-serif;
+			color: #E5D19C;
+			padding: 20px 0 0 0;
+		}
+
+		/* Layout */
+		#wrapper {
+			text-align: left;
+			margin: auto;
+			width: 678px;
+			position: relative;
+		}
+
+		/* Header */
+		#header {
+			padding-top: 1px;
+		}
+		#header h1 {
+			font: 22px "Times new roman", serif;
+			font-weight: normal;
+			position: absolute;
+			left: 0;
+			top: 35px;
+			color: #F2CD91;
+			padding: 0 0 0 0.7em;
+			margin: -1em 0 0 0;
+			line-height: 1;
+		}
+		#nav-top {
+			margin-left: 503px;
+		}
+		#nav-top ul {
+			margin: 1em 0 0 0;
+			padding: 0;
+			height: 31px;
+		}
+		#nav-top li {
+			float: left;
+			background: #C19855 url(https://sunnymeadanimal.com/images/tab_left.gif) no-repeat;
+			list-style: none;
+			text-align: center;
+			font: 18px "Times new roman", serif;
+			height: 31px;
+			line-height: 31px;
+		}
+		#nav-top li div {
+			background: top right url(https://sunnymeadanimal.com/images/tab_right.gif) no-repeat;
+		}
+		#nav-top li#tab-faq {
+			width: 59px;
+		}
+		#nav-top li#tab-map {
+			width: 99px;
+			margin-left: 3px;
+		}
+		#nav-top a {
+			color: #443816;
+			text-decoration: none;
+		}
+		#nav-top a:hover {
+			color: #241D0A;
+		}
+
+		#nav {
+			padding-top: 225px;
+			background: url(https://sunnymeadanimal.com/images/catheader.jpg) no-repeat;
+		}
+		#nav ul {
+			margin: 0;
+			padding: 0;
+			height: 36px;
+			line-height: 36px;
+			border-left: 2px solid #9E9479;
+			background: bottom left url(https://sunnymeadanimal.com/images/nav_lit.gif) repeat-x;
+		}
+		#nav li {
+			list-style: none;
+			float: left;
+			margin: 0;
+			padding: 0 10px;
+		}
+		#nav li.home {
+			background: bottom left url(https://sunnymeadanimal.com/images/nav_drk.gif) repeat-x;
+			padding-left: 25px;
+		}
+		#nav a {
+			font: 16px "Times new roman", serif;
+			color: #FFE5C3;
+			text-decoration: none;
+		}
+		#nav a:hover {
+			color: #F2E7D6;
+		}
+
+		/* Content */
+		#content {
+			padding-left: 20px;
+		}
+		#content h2 {
+			font: 24px "Times new roman", serif;
+			color: #513408;
+			font-weight: normal;
+			border-left: 3px solid #615331;
+			padding: 1px 1px 1px 8px;
+			margin-top: 22px;
+		}
+		#content p {
+			margin-left: 11px;
+			line-height: 1.4;
+		}
+		#content a {
+			color: #8D692D;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		#content a:hover {
+			color: #5B431A;
+		}
+
+		#content .left-col {
+			float: left;
+			width: 522px;
+		}
+		#content .right-col {
+			float: right;
+			width: 136px;
+		}
+
+		#content #welcome {
+			margin-right: 40px;
+			font-size: 13px;
+			color: #3E341E;
+		}
+		#content #welcome a {
+			color: #3E341E;
+			text-decoration: underline;
+		}
+		#content #welcome a:hover {
+			color: #DBBF77;
+			text-decoration: underline;
+		}
+
+		#content .right-col li, #content .right-col ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#content .right-col li {
+			border-left: 1px solid #615331;
+			padding-left: 9px;
+			margin: 10px;
+		}
+		#content .right-col a {
+			font-size: 12px;
+			font-weight: normal;
+			color: #67450D;
+		}
+		#content .right-col a:hover {
+			color: #2C1D04;
+		}
+
+		/* Later/Bottom Section */
+		#later {
+			color: #564929;
+		}
+		#later h2 {
+			font-size: 20px;
+		}
+		#later .right-col p {
+			font-size: 12px;
+			line-height: 1.7;
+		}
+		#later .box {
+			float: left;
+			width: 85px;
+		}
+		#later .box a {
+			text-decoration: underline;
+		}
+		#later #later-b1 {
+			padding-top: 67px;
+			margin-right: 4px;
+		}
+		#later #later-b2 {
+			width: 155px;
+			margin-right: 4px;
+		}
+		#later #later-b3 {
+			width: 114px;
+			margin-right: 6px;
+		}
+		#later #later-b4 {
+			padding-top: 67px;
+			width: 137px;
+		}
+
+		#footc {
+			height: 10px;
+		}
+		#footer {
+			background: #735220;
+			text-align: center;
+			color: #CFB472;
+			padding: 14px;
+		}
+		#footer a {
+			color: #CFB472;
+			margin: 0 10px;
+		}
+
+		/* Easter egg badge */
+		.easter-egg-badge {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: linear-gradient(135deg, #735220, #C89C52);
+			color: #F2CD91;
+			padding: 12px 20px;
+			border-radius: 8px;
+			font-family: "Times new roman", serif;
+			font-size: 14px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+			cursor: pointer;
+			transition: transform 0.3s ease;
+			z-index: 1000;
+		}
+		.easter-egg-badge:hover {
+			transform: scale(1.05);
+		}
+		.easter-egg-badge a {
+			color: #F2CD91;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Sunnymead Animal Hospital</h1>
+			<div id="nav-top">
+				<ul>
+					<li id="tab-faq"><div><a href="https://twitter.com/SunnymeadAnimal" target="_blank" rel="noopener noreferrer">🐦</a></div></li>
+					<li id="tab-map"><div><a href="https://www.facebook.com/SunnymeadAnimalHospital/" target="_blank" rel="noopener noreferrer">facebook</a></div></li>
+				</ul>
+			</div>
+			<div id="nav">
+				<ul>
+					<li class="home"><a href="classic.html">Home</a></li>
+					<li><a href="https://sunnymeadanimalhospital.securevetsource.com/site/view/HomeDelivery.pml" target="_blank" rel="noopener noreferrer">Online Pharmacy</a></li>
+					<li><a href="location.html">Location</a></li>
+					<li><a href="employment.html">Employment</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="tel:951-242-3118">951-242-3118</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="content">
+			<div class="left-col">
+				<div id="welcome">
+					<h2>Sunnymead Animal Hospital Achieves AAHA Accreditation!</h2>
+					<p><img src="https://sunnymeadanimal.com/images/aaha.png" alt="AAHA Accredited"></p>
+					<p>We are happy to announce that our hospital has received accreditation from the American Animal Hospital Association. AAHA accreditation means that we have met the stringent standards set out by AAHA and you can rest assured that your pet will receive the highest standard of care. Visit <a href="https://www.aaha.org/your-pet/why-accreditation-matters/" target="_blank" rel="noopener noreferrer">AAHA website</a> for more information.</p>
+
+					<h2>Introducing ScratchPay</h2>
+					<p>Scratchpay offers simple and affordable payment plans for large veterinary bills. Finding your payment plan does not affect your credit, takes just a couple of minutes and can be done from your smartphone, tablet or computer.</p>
+					<p>For more information about Scratchpay or to check your rate visit <a href="https://scratchpay.com/consumer?practice_id=HnbPwxhJnC&amount=500&utm_source=vcita" target="_blank" rel="noopener noreferrer">ScratchPay</a></p>
+
+					<h2>Moreno Valley Spotlight</h2>
+					<p>On 6/9/15 at the Moreno Valley City Council Meeting, we were honored by the city with a Spotlight on Business Award. Dr O, addressed the chamber and was presented with a certificate and a DVD of a 30 second tv spot that the city made for us. Thank you for your support Moreno Valley! Here is Dr. O's TV debut!</p>
+					<iframe width="480" height="270" src="https://www.youtube.com/embed/8cRfvbisvW8" frameborder="0" allowfullscreen></iframe>
+
+					<h2>Have We Seen Your Cat Lately?</h2>
+					<p>We know bringing your cat to see the doctor can be a difficult experience for both you and your cat. This often results in cats not getting to see their veterinarians as often as they should. All the staff at Sunnymead Animal Hospital are committed to ensuring that your cat has a good experience when she visits us. We have been busy this spring making changes that are sure to help your cat feel comfortable and get the care that she needs. <a href="cats.html">Read about our cat friendly amenities</a></p>
+
+					<h2>Meet Our Team</h2>
+					<p><strong>Dr. Ruben Ontiveros</strong> - Dr. Ontiveros attended California State University, Pomona, for his undergraduate degree. He then went on to obtain his DVM from the University of California, Davis. After graduation, he did an internship in small animal medicine & surgery at VCA West Los Angeles. Shortly after, he returned to his home town of Moreno Valley where he became the owner of Sunnymead Animal Hospital in 2002. He strives to give his patients an excellent standard of care in a family-like atmosphere.</p>
+					<p><strong>Dr. Sarah Lauro</strong> - Dr. Lauro is a Southern California native. She began her college career at California State Polytechnic University, Pomona where she majored in Animal Health Science and worked at the W.K. Kellogg Arabian Horse Center. She went on to obtain her DVM from Western University of Health Sciences. Dr. Lauro's professional interests include internal medicine, theriogenology, and soft tissue surgery.</p>
+				</div>
+			</div>
+			
+			<div class="right-col">
+				<h2>Staff...</h2>
+				<ul>
+					<li><a href="index.html#team">Dr. Ontiveros</a></li>
+					<li><a href="index.html#team">Dr. Lauro</a></li>
+				</ul>
+				<h2>Services...</h2>
+				<ul>
+					<li><a href="services/wellness.html">Wellness Exams</a></li>
+					<li><a href="services/vaccinations.html">Vaccinations</a></li>
+					<li><a href="services/pharmacy.html">Pharmacy Services</a></li>
+					<li><a href="services/microchips.html">Microchips</a></li>
+					<li><a href="services/spay-neuter.html">Spay & Neuter</a></li>
+					<li><a href="services/emergency.html">Emergency Services</a></li>
+					<li><a href="services/surgery.html">Surgery</a></li>
+					<li><a href="services/anesthesia.html">Anesthesia</a></li>
+					<li><a href="services/lab.html">Lab Services</a></li>
+					<li><a href="services/dentistry.html">Dentistry</a></li>
+					<li><a href="services/radiology.html">Radiology</a></li>
+					<li><a href="services/ultrasound.html">Ultrasonography</a></li>
+					<li><a href="services/laser-therapy.html">Laser Therapy</a></li>
+					<li><a href="services/euthanasia.html">Euthanasia</a></li>
+				</ul>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div id="later">
+				<div class="left-col">
+					<div class="box" id="later-b2">
+						<h2>Helpful Links</h2>
+						<ul>
+							<li><a href="http://petsadoption.org" target="_blank" rel="noopener noreferrer">Mary S Roberts Pet Adoption Center</a></li>
+							<li><a href="http://homeagain.com" target="_blank" rel="noopener noreferrer">HomeAgain Microchips</a></li>
+							<li><a href="http://petinsurance.com" target="_blank" rel="noopener noreferrer">VPI Pet Insurance</a></li>
+							<li><a href="http://aspcapetinsurance.com" target="_blank" rel="noopener noreferrer">ASPCA Pet Insurance</a></li>
+							<li><a href="https://scratchpay.com" target="_blank" rel="noopener noreferrer">Scratch Pay Payment Plans</a></li>
+						</ul>
+					</div>
+					<div class="box" id="later-b3">
+						<h2>Pet Health</h2>
+						<ul>
+							<li><a href="http://aspca.org/pet-care/poison-control" target="_blank" rel="noopener noreferrer">Pet Poison Control</a></li>
+							<li><a href="https://www.aaha.org/your-pet/pet-owner-education/ask-aaha/spaying-and-neutering/" target="_blank" rel="noopener noreferrer">Spay/Neuter</a></li>
+							<li><a href="http://petsandparasites.org" target="_blank" rel="noopener noreferrer">Pet Parasites</a></li>
+							<li><a href="http://healthypet.com" target="_blank" rel="noopener noreferrer">Healthy Pets</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footc"></div>
+		
+		<div id="footer">
+			<a href="location.html">Location</a> | 
+			<a href="contact.html">Contact Us</a> | 
+			<a href="tel:951-242-3118">951-242-3118</a>
+			<br><br>
+			24537 Sunnymead Boulevard, Moreno Valley, CA 92553
+			<br>
+			© 2024 Sunnymead Animal Hospital
+		</div>
+	</div>
+
+	<!-- Easter Egg Badge -->
+	<div class="easter-egg-badge">
+		🐾 <a href="index.html">Back to the Future →</a>
+	</div>
+
+</body>
+</html>
+
