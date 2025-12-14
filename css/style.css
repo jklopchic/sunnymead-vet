@@ -1703,8 +1703,10 @@ a:hover {
     }
     
     .spotlight-video {
+        width: 100%;
         max-width: 500px;
         margin: 0 auto;
+        padding-bottom: 56.25%;
     }
     
     .cat-detail-grid {
