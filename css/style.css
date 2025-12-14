@@ -259,6 +259,34 @@ a:hover {
     background: var(--primary-dark);
 }
 
+.nav-social {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--gray-300);
+}
+
+.nav-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: var(--gray-500);
+    transition: var(--transition-fast);
+}
+
+.nav-social a:hover {
+    color: var(--primary);
+}
+
+.nav-social svg {
+    width: 18px;
+    height: 18px;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -1771,6 +1799,10 @@ a:hover {
     
     .nav-toggle {
         display: flex;
+    }
+    
+    .nav-social {
+        display: none;
     }
     
     .hero {
