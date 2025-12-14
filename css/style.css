@@ -774,6 +774,35 @@ a {
     height: 20px;
 }
 
+.contact-map-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.map-container {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.map-container iframe {
+    display: block;
+}
+
+.directions-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.directions-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 .contact-cta-wrapper {
     display: flex;
     align-items: center;
