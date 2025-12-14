@@ -1570,6 +1570,118 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Cat-Friendly Page */
+.cat-header {
+    background: linear-gradient(135deg, #7c5295 0%, var(--burgundy) 100%);
+}
+
+.cat-detail {
+    padding: var(--section-padding) 0;
+    background: var(--bg-primary);
+}
+
+.cat-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.cat-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.cat-hero-image {
+    float: right;
+    max-width: 280px;
+    margin: 0 0 1.5rem 2rem;
+    border-radius: var(--radius-lg);
+}
+
+.cat-intro h2 {
+    color: var(--burgundy);
+    margin-bottom: 1rem;
+}
+
+.cat-intro .lead {
+    font-size: 1.15rem;
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+.cat-features-detail h3 {
+    color: var(--burgundy);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-300);
+    margin-bottom: 1rem;
+}
+
+.feature-card .feature-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.feature-card h4 {
+    color: var(--burgundy);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.feature-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cat-cta {
+    background: linear-gradient(135deg, #f5f0f7 0%, #faf5f0 100%);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.cat-cta h3 {
+    color: var(--burgundy);
+    margin-bottom: 1rem;
+}
+
+.cat-cta p {
+    margin-bottom: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cat-cta .btn {
+    margin-top: 1rem;
+}
+
+.cat-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-card.highlight-card {
+    background: linear-gradient(135deg, #7c5295 0%, var(--burgundy) 100%);
+    color: var(--white);
+    border: none;
+}
+
+.sidebar-card.highlight-card h3,
+.sidebar-card.highlight-card p {
+    color: var(--white);
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .location-grid {
@@ -1593,6 +1705,17 @@ a:hover {
     .spotlight-video {
         max-width: 500px;
         margin: 0 auto;
+    }
+    
+    .cat-detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cat-hero-image {
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 1.5rem;
     }
     .cat-friendly-grid,
     .contact-grid {
