@@ -93,32 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.appendChild(style);
 
-    // Form submission handler
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            
-            // Show success message (in a real app, you'd send this to a server)
-            const button = contactForm.querySelector('button[type="submit"]');
-            const originalText = button.textContent;
-            
-            button.textContent = 'Message Sent! ✓';
-            button.style.background = 'linear-gradient(135deg, #10B981 0%, #059669 100%)';
-            
-            // Reset form
-            contactForm.reset();
-            
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                button.textContent = originalText;
-                button.style.background = '';
-            }, 3000);
-        });
-    }
 
     // Add hover effect to service cards
     const serviceCards = document.querySelectorAll('.service-card:not(.featured)');
