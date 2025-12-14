@@ -345,23 +345,23 @@ a:hover {
 }
 
 .stat {
-    text-align: center;
-}
-
-.stat {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .stat-icon {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
 }
 
 .stat-text {
     font-size: 0.95rem;
     color: var(--gray-600);
     font-weight: 500;
+    line-height: 1;
 }
 
 .stat-divider {
