@@ -5,30 +5,31 @@
 
 /* CSS Variables */
 :root {
-    /* Primary Colors - Warm Earth Tones inspired by original site */
-    --primary: #4A7C59;          /* Sage green - trustworthy, natural */
-    --primary-dark: #3A5F46;
-    --primary-light: #7BA38A;
-    --accent: #C17F59;           /* Warm terracotta */
-    --accent-light: #E8D4C4;
+    /* Primary Colors - Matched to logo */
+    --primary: #8B7B2B;          /* Olive gold from logo border */
+    --primary-dark: #6B5F1F;
+    --primary-light: #A99A4A;
+    --accent: #8B1A1A;           /* Deep burgundy from logo */
+    --accent-light: #D4A574;     /* Warm gold */
     
-    /* Blues for trust (like original site) */
-    --blue: #3D5A80;
-    --blue-light: #6B8CAE;
+    /* Logo colors */
+    --burgundy: #722F37;         /* Maroon background in logo */
+    --gold: #C9B037;             /* Yellow/gold sunburst */
+    --olive: #8B7B2B;            /* Olive green border */
     
     /* Warm Neutrals */
-    --dark: #3D3D3D;
-    --dark-soft: #555555;
-    --gray-700: #5C5C5C;
-    --gray-500: #7A7A7A;
-    --gray-300: #C4C4C4;
-    --gray-100: #F5F5F5;
+    --dark: #2D2A26;             /* Warm black */
+    --dark-soft: #4A4540;
+    --gray-700: #5C5550;
+    --gray-500: #7A756E;
+    --gray-300: #C4BFBA;
+    --gray-100: #F5F4F2;
     --white: #FFFFFF;
     
     /* Warm Backgrounds */
     --bg-primary: #FFFEF9;       /* Warm white */
-    --bg-secondary: #F7F4EE;     /* Cream */
-    --bg-warm: #FDF8F3;          /* Light peach */
+    --bg-secondary: #F8F5EE;     /* Cream */
+    --bg-warm: #FDF6ED;          /* Light warm */
     
     /* Typography - Friendly & Readable */
     --font-display: Georgia, 'Times New Roman', serif;
@@ -124,7 +125,7 @@ a:hover {
 }
 
 .section-header h2 {
-    color: var(--blue);
+    color: var(--burgundy);
     margin-bottom: 0.75rem;
 }
 
@@ -215,24 +216,16 @@ a:hover {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    color: var(--blue);
     text-decoration: none;
 }
 
-.logo:hover {
-    color: var(--blue);
+.logo-img {
+    height: 55px;
+    width: auto;
 }
 
-.logo-icon {
-    font-size: 1.6rem;
-}
-
-.logo-accent {
-    color: var(--primary);
-    margin-left: 0.25rem;
+.footer-logo-img {
+    height: 70px;
 }
 
 .nav-menu {
@@ -311,15 +304,15 @@ a:hover {
 }
 
 .hero h1 {
-    color: var(--blue);
+    color: var(--burgundy);
     margin-bottom: 1.25rem;
     font-size: 2.75rem;
 }
 
 .hero h1 .text-gradient {
-    color: var(--primary);
+    color: var(--olive);
     background: none;
-    -webkit-text-fill-color: var(--primary);
+    -webkit-text-fill-color: var(--olive);
 }
 
 .hero > .hero-content > p {
@@ -356,7 +349,7 @@ a:hover {
     display: block;
     font-family: var(--font-display);
     font-size: 1.25rem;
-    color: var(--blue);
+    color: var(--burgundy);
 }
 
 .stat-label {
@@ -376,7 +369,7 @@ a:hover {
 
 /* Accreditation Section */
 .accreditation {
-    background: var(--blue);
+    background: var(--burgundy);
     padding: 2rem 0;
 }
 
@@ -454,7 +447,7 @@ a:hover {
 .service-card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
-    color: var(--blue);
+    color: var(--burgundy);
 }
 
 .service-card p {
@@ -479,14 +472,14 @@ a:hover {
 }
 
 .cat-friendly-content h2 {
-    color: var(--blue);
+    color: var(--burgundy);
     margin-bottom: 1rem;
 }
 
 .cat-friendly-content h2 .text-gradient {
-    color: var(--primary);
+    color: var(--olive);
     background: none;
-    -webkit-text-fill-color: var(--primary);
+    -webkit-text-fill-color: var(--olive);
 }
 
 .cat-friendly-content p {
@@ -585,7 +578,7 @@ a:hover {
 }
 
 .team-card h3 {
-    color: var(--blue);
+    color: var(--burgundy);
     margin-bottom: 0.25rem;
 }
 
@@ -610,7 +603,7 @@ a:hover {
 }
 
 .payment-card {
-    background: var(--blue);
+    background: var(--burgundy);
     border-radius: var(--radius-lg);
     padding: 2.5rem;
     display: flex;
@@ -657,14 +650,14 @@ a:hover {
 }
 
 .contact-info h2 {
-    color: var(--blue);
+    color: var(--burgundy);
     margin-bottom: 0.75rem;
 }
 
 .contact-info h2 .text-gradient {
-    color: var(--primary);
+    color: var(--olive);
     background: none;
-    -webkit-text-fill-color: var(--primary);
+    -webkit-text-fill-color: var(--olive);
 }
 
 .contact-info > p {
@@ -812,7 +805,7 @@ a:hover {
 }
 
 .page-header h1 {
-    color: var(--blue);
+    color: var(--burgundy);
     margin-bottom: 0.5rem;
 }
 
@@ -848,7 +841,7 @@ a:hover {
 }
 
 .job-header h2 {
-    color: var(--blue);
+    color: var(--burgundy);
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
 }
@@ -869,7 +862,7 @@ a:hover {
 }
 
 .job-content h3 {
-    color: var(--blue);
+    color: var(--burgundy);
     font-size: 1.1rem;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
